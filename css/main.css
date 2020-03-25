@@ -1,0 +1,12 @@
+html {
+  font: open sans;
+}
+
+label {
+  display: block;
+}
+
+button {
+  background-color: #000;
+  color: #fff;
+}
