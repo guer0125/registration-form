@@ -1,5 +1,6 @@
 html {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
+  background-color: #f2f2f2;
 }
 
 label {
@@ -11,10 +12,22 @@ button {
   color: #fff;
 }
 
+form {
+  background-color: #fff;
+}
+
 h1 {
   border-bottom: solid 1px #000;
 }
 
-btn {
-  align-content: center;
+@media only screen and (min-width: 60em) {
+
+  .space-right {
+  padding-right: 5rem;
+  }
+
+  .space-left {
+    padding-left: .5rem;
+  }
+
 }
