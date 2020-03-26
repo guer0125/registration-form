@@ -4,54 +4,62 @@
   <meta charset="utf-8">
   <title>Contact form</title>
   <link href="css/modules.css" rel="stylesheet">
+  <link href="css/grid.css" rel="stylesheet">
   <link href="css/type.css" rel="stylesheet">
   <link href="css/main.css" rel="stylesheet">
   <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
 </head>
 <body>
 
-  <section class="contact">
-    <div class="push">
-      <h1>Want to go to Mars?</h1>
-      <p>We’re looking for super-awesome human beings who want to make the long trek to Mars for the adventure of a lifetime.</p>
-
-      <h2>Personal details</h2>
-
+  <section class="contact island">
+    <div class="max-length pad-t pad-b">
       <form class="push-0" method="POST" action="https://formspree.io/guer0125@algonquinlive.com">
-        <div>
-          <label for="name">Name</label>
-          <input id="name" required>
+        <div class="">
+          <h1 class="normal">Want to go to Mars?</h1>
+          <p class="mega">We’re looking for super-awesome human beings who want to make the long trek to Mars for the adventure of a lifetime.</p>
         </div>
-        <div>
-          <label for="age">Age</label>
-          <input id="age">
-        </div>
-        <div>
-          <label for="email">Email</label>
-          <input id="email" type="email" placeholder="me@me.com" required>
-        </div>
-        <div>
-          <label for="fitness">Physical fitness</label>
-          <select id="fitness">
-            <option>Super-human</option>
-            <option>Fit as a fiddle</option>
-            <option>Not terribly strong</option>
-            <option>A little couch-potato-y</option>
-          </select>
-        </div>
-        <div>
-          <label for="address">address</label>
-          <textarea id="address"></textarea>
-        </div>
-
-        <h2>Mission statement</h2>
-
-        <div>
-          <label for="details">Why do you want to go to Mars?</label>
-          <textarea id="details"></textarea>
-        </div>
-        <div class="button">
-          <button type="submit">Register for the trip!</button>
+          <fieldset class="push-0">
+          <legend class="giga normal italic push-0 pad-b-1-2">Personal details</legend>
+          <div class="grid">
+          <div class="pad-b unit-l-1-2">
+            <label for="name">Name</label>
+            <input id="name" required>
+          </div>
+          <div class="pad-b unit-l-1-2">
+            <label for="age">Age</label>
+            <input id="age">
+          </div>
+          <div class="grid">
+          </div>
+          <div class="pad-b unit-l-1-2">
+            <label for="email">Email</label>
+            <input id="email" type="email" placeholder="me@me.com" required>
+          </div>
+          <div class="pad-b unit-l-1-2">
+            <label for="select">Physical fitness</label>
+            <select id="select">
+              <option>Super-human</option>
+              <option>Fit as a fiddle</option>
+              <option>Not terribly strong</option>
+              <option>A little couch-potato-y</option>
+            </select>
+          </div>
+          </div>
+          <div class="pad-b">
+            <label for="address">Address</label>
+            <textarea id="address"></textarea>
+          </div>
+        </fieldset>
+        <fieldset class="pad-b grid">
+          <legend class="giga normal italic">Mission statement</legend>
+          <div class="pad-b">
+            <label for="details">Why do you want to go to Mars?</label>
+            <textarea id="details"></textarea>
+          </div>
+        </fieldset>
+        <div class="pad-b button bold">
+          <button class="btn" type="submit">Register for the trip!</button>
         </div>
       </form>
     </div>
